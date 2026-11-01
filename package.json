@@ -1,0 +1,21 @@
+{
+  "name": "chessmat",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "dev:web": "npm run dev --workspace apps/web",
+    "dev:backend": "npm run dev --workspace apps/backend",
+    "dev:mobile": "npm run start --workspace apps/mobile",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.4",
+    "prisma": "^5.4.0"
+  }
+}
