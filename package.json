@@ -17,5 +17,8 @@
     "turbo": "^2.0.0",
     "typescript": "^5.5.4",
     "prisma": "^5.4.0"
+  },
+  "dependencies": {
+    "chess.js": "^1.0.0"
   }
 }
